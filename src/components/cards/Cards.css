@@ -45,7 +45,7 @@
 
 .event_btns {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     padding: 0.5rem 0;
     
 }

@@ -7,7 +7,7 @@ const CardsData = [
         imgsrc: Workshop,
         title: "Workshops",
         text: "Somemtuihhhhhhhhhhhhdgvhjb jhgshgfwygjhbsnbjbm  jhksjhusiu",
-        view : 'domthing.com'
+        explore : '/workshop'
     },
     {
         imgsrc: Games,

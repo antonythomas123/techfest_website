@@ -3,7 +3,7 @@ import React from 'react'
 import Particles from "react-tsparticles";
 import { loadFull } from "tsparticles";
 
-function Particle() {
+function ParticlesComponent() {
     const particlesInit = async(main) => {
         console.log(main);
         await loadFull(main);
@@ -13,12 +13,14 @@ function Particle() {
     }
   return (
     <Particles
-        width='100%'
-        height='40px'
         id = 'tsparticles'
         init= {particlesInit}
         loaded={particlesLoaded}
         options={{
+            fullScreen: {
+                enable: true,
+                zIndex: 1
+            },
             fpsLimit: 320,
             interactivity: {
                 events: {
@@ -38,7 +40,7 @@ function Particle() {
                     },
                     repulse: {
                         distance: 200,
-                        duration: 0.4,
+                        duration: 0.9,
                     },
                 },
             },
@@ -63,7 +65,7 @@ function Particle() {
                         default: "bounce",
                     },
                     random: false,
-                    speed: 6,
+                    speed: 1,
                     straight: false,
                 },
                 number: {
@@ -89,4 +91,4 @@ function Particle() {
   )
 }
 
-export default Particle
+export default ParticlesComponent

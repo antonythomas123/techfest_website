@@ -19,10 +19,10 @@ function Navbar() {
     <div className={color ? "Navbar Navbar-bg" : "Navbar"}>
       <img src={Logo} className="nav-logo" alt='logo'/>
       <div className={`nav-items ${isOpen && "open"}`}>
-        <a href="/home">Home</a>
-        <a href="/about">Events</a>
-        <a href="/service">Register</a>
-        <a href="/contact">Contact Us</a>
+        <a href="/">Home</a>
+        <a href="/events">Events</a>
+        <a href="/">Register</a>
+        <a href="#footer">Contact Us</a>
       </div>
       <div
         className={`nav-toggle ${isOpen && "open"}`}

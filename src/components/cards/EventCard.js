@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 import "./Cards.css";
 
@@ -10,8 +11,7 @@ function EventCard(props) {
       <div className="event_details">
         <p>{props.text}</p>
         <div className="event_btns">
-          <button className="btn">View</button>
-          <button className="btn">Register</button>
+          <Link to={props.explore} className="btn">Explore</Link>
         </div>
       </div>
     </div>
